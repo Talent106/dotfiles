@@ -1,0 +1,38 @@
+# CUSTOM ALIASES
+
+# System aliases
+alias cl='clear'
+alias ls='exa'
+alias vim='nvim'
+
+# alias aliasconf='nvim ~/.bash_aliases'
+alias aliasconf='nvim ~/.zshrc'
+alias confnvim='cd ~/.config/nvim && nvim'
+
+# Git aliases
+alias set-git-credentials="git config --global credential.helper 'store --file ~/.tkn'"
+
+# PHP aliases
+alias restart-apache='sudo systemctl restart apache2'
+alias change-php-version='sudo update-alternatives --config php'
+
+# Laravel aliases
+alias artisan='php artisan'
+alias p-serve='php artisan serve'
+alias tinker='php artisan tinker'
+alias config-cache='php artisan config:cache'
+
+alias migrate='php artisan migrate'
+alias migrate-rollback='php artisan migrate:rollback'
+alias migrate-fresh-seed='php artisan migrate:fresh --seed'
+
+alias make-migration='php artisan make:migration'
+alias make-model-doc='php artisan ide-helper:models'
+alias make-controller='php artisan make:controller'
+alias make-rest-resource='php artisan make:rest-resource'
+
+### DIR aliases
+alias development='cd ~/Development'
+alias work='cd ~/Work'
+alias eloverde-dev='cd ~/Work/Development/dev'
+alias eloverde-prod='cd ~/Work/Development/prod'
