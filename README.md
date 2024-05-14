@@ -10,7 +10,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 - Create a gitignore to avoid recursive problems:
 ```shell
-echo ".cfg" >> .gitignore
+echo ".dotfiles" >> .gitignore
 ```
 - Clone de project as bare:
 ```shell
