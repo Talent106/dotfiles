@@ -30,4 +30,5 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(fzf --zsh)"
 
+# SOURCE MY ALIASES
 source $HOME/.aliases

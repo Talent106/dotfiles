@@ -1,5 +1,3 @@
-# CUSTOM ALIASES
-
 # System aliases
 alias cl='clear'
 alias ls='exa'
