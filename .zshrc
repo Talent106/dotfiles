@@ -10,6 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 
 ZSH_THEME="bira"
 
+# SETUP BARE DOTFILES REPO
+alias config="/usr/bin/git --git-dir=/$HOME/.dotfiles/ --work-tree=$HOME"
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
