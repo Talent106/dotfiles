@@ -42,4 +42,9 @@ xargs -I{} mv {} .config-backup/{}
 ```shell
 config config --local status.showUntrackedFiles no
 ```
+- Init private submodules
+```shell
+config submodule init
+config submodule update
+```
 
