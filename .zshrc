@@ -32,3 +32,6 @@ eval "$(fzf --zsh)"
 
 # SOURCE MY ALIASES
 source $HOME/.aliases
+
+# REMAP SUGGESTION ACCEPT
+bindkey '^y' end-of-line
