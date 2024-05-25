@@ -3,4 +3,4 @@
 	url = https://github.com/EnzoJ0se/personal.git
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = https://github.com/EnzoJ0se/nvim
+	url = ssh://git@github.com:EnzoJ0se/nvim.git
