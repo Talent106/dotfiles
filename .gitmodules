@@ -1,6 +1,6 @@
 [submodule ".personal"]
 	path = .personal
-	url = ssh://git@github.com:EnzoJ0se/personal.git
+	url = git@github.com:EnzoJ0se/personal.git
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = ssh://git@github.com:EnzoJ0se/nvim.git
+	url = git@github.com:EnzoJ0se/nvim.git
