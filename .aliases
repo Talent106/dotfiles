@@ -34,3 +34,9 @@ alias development='cd ~/Development'
 alias work='cd ~/Work'
 alias eloverde-dev='cd ~/Work/Development/dev'
 alias eloverde-prod='cd ~/Work/Development/prod'
+
+### NGT Aliases
+alias build-ngt="cd ../ng-tailwind && npm run build-ngt"
+alias update-ngt-dist="rm ../web-eloverde/node_modules/ng-tailwind -r && cp dist/ng-tailwind ../web-eloverde/node_modules/ng-tailwind -r && echo '------ DIST UPDATED ------'"
+alias remove-dot-angular="cd ../web-eloverde && rm .angular -r && echo '------ REMOVED .angular ------'"
+alias test-ngt="build-ngt && update-ngt-dist && remove-dot-angular && npm run serve"
