@@ -1,7 +1,7 @@
 # System aliases
 alias cl='clear'
-alias ls='exa'
 alias vim='nvim'
+# alias ls='exa'
 
 # alias aliasconf='nvim ~/.bash_aliases'
 alias aliasconf='nvim ~/.zshrc'

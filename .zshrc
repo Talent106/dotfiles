@@ -1,6 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# If is MacOS
+if [[ $OSTYPE == 'darwin'* ]]; then
+	# Add homebrew to path
+	export PATH=$PATH:/opt/homebrew/bin 
+	#Add mysql to PATH
+	export PATH=${PATH}:/usr/local/mysql/bin
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -23,8 +31,14 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # PLUGINS SETUP
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# If is MacOS
+if [[ $OSTYPE == 'darwin'* ]]; then
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+else
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # FZF SETUP
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -35,3 +49,6 @@ source $HOME/.aliases
 
 # REMAP SUGGESTION ACCEPT
 bindkey '^y' end-of-line
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
